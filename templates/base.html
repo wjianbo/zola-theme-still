@@ -12,12 +12,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
 
-    {% if config.generate_feed %}
+    {% if config.generate_feeds %}
+      {% set feed_file = config.feed_filenames | first | default(value="atom.xml") %}
       <link
         rel="alternate"
-        type="{% if config.feed_filename == "atom.xml" %}application/atom+xml{% else %}application/rss+xml{% endif %}"
+        type="{% if feed_file == "atom.xml" %}application/atom+xml{% else %}application/rss+xml{% endif %}"
         title="RSS"
-        href="{{ get_url(path=config.feed_filename) | safe }}"
+        href="{{ get_url(path=feed_file) | safe }}"
       >
     {% endif %}
 
