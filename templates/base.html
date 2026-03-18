@@ -7,7 +7,33 @@
     <!-- Mobile responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
 
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    {% if page %}
+      {% set page_title = page.title ~ " | " ~ config.title %}
+      {% set page_description = page.description | default(value=page.summary) | default(value=config.description) | striptags | trim %}
+      {% set page_url = page.permalink %}
+    {% elif section %}
+      {% set page_title = section.title ~ " | " ~ config.title %}
+      {% set page_description = section.description | default(value=config.description) | striptags | trim %}
+      {% set page_url = section.permalink %}
+    {% else %}
+      {% set page_title = config.title %}
+      {% set page_description = config.description | default(value=config.title) | striptags | trim %}
+      {% set page_url = config.base_url %}
+    {% endif %}
+
+    <title>{% block title %}{{ page_title }}{% endblock title %}</title>
+    <meta name="description" content="{{ page_description }}">
+    <link rel="canonical" href="{{ page_url }}">
+
+    <meta property="og:site_name" content="{{ config.title }}">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_description }}">
+    <meta property="og:url" content="{{ page_url }}">
+    <meta property="og:type" content="{% if page %}article{% else %}website{% endif %}">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ page_description }}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
