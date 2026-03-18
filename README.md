@@ -8,11 +8,20 @@ Just words, spacing, and time.
 
 This theme is designed for personal blogs, essays, and long-form writing.
 
-A live demo is not available yet.
-You can preview the visual style on the author’s blog:
-[https://wjianbo.github.io](https://wjianbo.github.io)
+A live demo can be published from this repository with GitHub Actions and GitHub Pages. Once the `Deploy demo site` workflow runs on the default branch, the theme demo will be available at the repository Pages URL.
 
 ---
+
+## Demo deployment
+
+This repository includes a ready-to-run GitHub Actions workflow that builds the demo site with Zola and deploys the generated `public/` folder to GitHub Pages.
+
+1. Enable **GitHub Pages** for the repository.
+2. Leave the source set to **GitHub Actions**.
+3. Push to the default branch or run the **Deploy demo site** workflow manually.
+
+The workflow automatically asks GitHub Pages for the correct base URL, so it works for both user/organization pages and project pages.
+
 
 ## Features
 
