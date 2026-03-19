@@ -39,6 +39,19 @@ compile_sass = true
 build_search_index = false
 ```
 
+## Demo deployment
+
+This repository includes a GitHub Actions workflow that builds the demo site and deploys the generated `public/` directory to GitHub Pages.
+
+To enable it:
+
+1. Open the repository settings on GitHub.
+2. Go to `Pages`.
+3. Set the source to `GitHub Actions`.
+4. Push to `main` or run the `Deploy demo site` workflow manually.
+
+The workflow asks GitHub Pages for the correct public URL at build time, so it works for both user pages and project pages without hardcoding the final `base_url`.
+
 ## Configuration
 
 These optional values can be set in your site `config.toml`:
