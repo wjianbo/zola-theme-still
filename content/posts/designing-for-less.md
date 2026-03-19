@@ -12,4 +12,4 @@ In practice, that means:
 * using contrast sparingly
 * resisting components that call attention to themselves
 
-A theme like **Still** tries to make those choices feel inevitable rather than impressive.
+A theme like **still** tries to make those choices feel inevitable rather than impressive.

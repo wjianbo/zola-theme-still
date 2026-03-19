@@ -1,14 +1,13 @@
 base_url = "https://example.com"
-title = "Still"
-description = "A minimal Zola theme focused on calm reading and quiet writing."
-author = "Still Demo"
+title = "still"
+description = "A minimal Zola theme focused on reading and writing."
+author = "still Demo"
 compile_sass = true
 build_search_index = false
 generate_feeds = true
 feed_filenames = ["atom.xml"]
-
-[markdown]
-highlight_code = false
+default_language = "en"
 
 [extra]
-lang = "en"
+still_date_format = "%Y-%m-%d"
+still_show_author = true

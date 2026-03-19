@@ -1,80 +1,73 @@
-# zola-theme-still
+# still
 
-**Still** is a minimal Zola theme focused on calm reading, typography, and intentional silence.
+**still** is a minimal Zola theme for personal blogs, essays, and long-form writing.
 
-No visual noise.
-No unnecessary navigation.
-Just words, spacing, and time.
+It defaults to a simple reading layout:
 
-This theme is designed for personal blogs, essays, and long-form writing.
-
-A live demo can be published from this repository with GitHub Actions and GitHub Pages. Once the `Deploy demo site` workflow runs on the default branch, the theme demo will be available at the repository Pages URL.
-
----
-
-## Demo deployment
-
-This repository includes a ready-to-run GitHub Actions workflow that builds the demo site with Zola and deploys the generated `public/` folder to GitHub Pages.
-
-1. Enable **GitHub Pages** for the repository.
-2. Leave the source set to **GitHub Actions**.
-3. Push to the default branch or run the **Deploy demo site** workflow manually.
-
-The workflow automatically asks GitHub Pages for the correct base URL, so it works for both user/organization pages and project pages.
-
+* the homepage can show an intro and a post list together
+* section pages list posts without extra chrome
+* post pages stay focused on typography and content
 
 ## Features
 
-* Clean, monochrome design
-* Focused reading experience
-* No homepage navigation by default
-* Designed for internal linking between posts
-* Suitable for long-form writing
-
----
+* Minimal monochrome presentation
+* Homepage intro plus post listing by default
+* Section index pages with consistent date formatting
+* Optional author signature in post footers
+* Light and dark color-scheme support
 
 ## Installation
 
-Make sure you have created a Zola site:
+Create a Zola site first:
 
 ```bash
 zola init myblog
 cd myblog
 ```
 
-Then add the theme to the `themes` directory.
-
-Using git submodule:
+Add the theme under `themes/still`:
 
 ```bash
 git submodule add https://github.com/wjianbo/zola-theme-still themes/still
 ```
 
-Or clone directly:
-
-```bash
-git clone https://github.com/wjianbo/zola-theme-still themes/still
-```
-
----
-
-## Configuration
-
-Edit `config.toml` and set the theme:
+Then enable it in your site config:
 
 ```toml
 theme = "still"
+compile_sass = true
 build_search_index = false
 ```
 
----
+## Configuration
+
+These optional values can be set in your site `config.toml`:
+
+```toml
+title = "My Blog"
+default_language = "en"
+
+[extra]
+still_date_format = "%Y-%m-%d"
+still_show_author = true
+```
+
+Notes:
+
+* `default_language` controls the HTML `lang` attribute
+* `still_date_format` is used on the homepage, section pages, and post pages
+* `still_show_author` hides or shows the footer signature when `author` is set
+
+## Content model
+
+For the homepage, put introductory copy in `content/_index.md`. The theme will render that intro first and then list pages from the root section underneath it.
+
+For posts, use dated pages under a section such as `content/posts/`.
 
 ## Philosophy
 
-Still is not about *less features*,
-but about *less distraction*.
+This theme aims to remove structural noise without removing the basic affordances a blog still needs:
 
-Each page should feel complete on its own,
-yet quietly connected to others through links.
-
-Reading should feel slow.
+* a clear homepage entry point
+* predictable navigation back to section or home
+* stable typography across reading contexts

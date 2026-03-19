@@ -1,9 +1,9 @@
-name = "monochrome"
-description = "A Chinese friendly blog theme"
+name = "still"
+description = "A minimal Zola blog theme focused on reading and writing"
 license = "MIT"
-homepage = "https://github.com/getzola/hyde"
+homepage = "https://github.com/wjianbo/zola-theme-still"
 # The minimum version of Zola required
-min_version = "0.18.0"
+min_version = "0.22.0"
 # An optional live demo URL
 demo = ""
 
@@ -12,8 +12,8 @@ demo = ""
 # be merged with user data, some kind of prefix or nesting is preferable
 # Use snake_casing to be consistent with the rest of Zola
 [extra]
-# Google Font API mirror URLs (for China mainland users, try fonts.loli.net)
-monochrome_font_mirror = "fonts.googleapis.com"
+still_date_format = "%Y-%m-%d"
+still_show_author = true
 
 # The theme author info: you!
 [author]

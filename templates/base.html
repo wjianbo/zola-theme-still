@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ config.extra.lang | default(value="en") }}">
+<html lang="{{ config.default_language | default(value="en") }}">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,15 +9,33 @@
 
     {% if page %}
       {% set page_title = page.title ~ " | " ~ config.title %}
-      {% set page_description = page.description | default(value=page.summary) | default(value=config.description) | striptags | trim %}
+      {% if page.description %}
+        {% set page_description = page.description | striptags | trim %}
+      {% elif page.summary %}
+        {% set page_description = page.summary | striptags | trim %}
+      {% elif config.description %}
+        {% set page_description = config.description | striptags | trim %}
+      {% else %}
+        {% set page_description = config.title %}
+      {% endif %}
       {% set page_url = page.permalink %}
     {% elif section %}
       {% set page_title = section.title ~ " | " ~ config.title %}
-      {% set page_description = section.description | default(value=config.description) | striptags | trim %}
+      {% if section.description %}
+        {% set page_description = section.description | striptags | trim %}
+      {% elif config.description %}
+        {% set page_description = config.description | striptags | trim %}
+      {% else %}
+        {% set page_description = config.title %}
+      {% endif %}
       {% set page_url = section.permalink %}
     {% else %}
       {% set page_title = config.title %}
-      {% set page_description = config.description | default(value=config.title) | striptags | trim %}
+      {% if config.description %}
+        {% set page_description = config.description | striptags | trim %}
+      {% else %}
+        {% set page_description = config.title %}
+      {% endif %}
       {% set page_url = config.base_url %}
     {% endif %}
 
@@ -53,20 +71,7 @@
 
   <body>
     <main class="content container px-2 pb-20">
-      {% block content %}
-        <div class="posts">
-          {% for page in section.pages | reverse %}
-            <div class="post">
-              <h1 class="post-title">
-                <a href="{{ page.permalink }}">{{ page.title | safe }}</a>
-              </h1>
-              <span class="post-date">
-                {{ page.date | date(format="%Y-%m-%d") }}
-              </span>
-            </div>
-          {% endfor %}
-        </div>
-      {% endblock content %}
+      {% block content %}{% endblock content %}
     </main>
   </body>
 </html>
