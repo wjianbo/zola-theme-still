@@ -41,16 +41,17 @@ build_search_index = false
 
 ## Demo deployment
 
-This repository includes a GitHub Actions workflow that builds the demo site and deploys the generated `public/` directory to GitHub Pages.
+This repository includes a GitHub Actions workflow that builds the demo site and publishes it to the `gh-pages` branch.
 
 To enable it:
 
 1. Open the repository settings on GitHub.
 2. Go to `Pages`.
-3. Set the source to `GitHub Actions`.
-4. Push to `main` or run the `Deploy demo site` workflow manually.
+3. Set the source to `Deploy from a branch`.
+4. Select the `gh-pages` branch and the `/(root)` folder.
+5. Push to `main`.
 
-The workflow asks GitHub Pages for the correct public URL at build time, so it works for both user pages and project pages without hardcoding the final `base_url`.
+The workflow runs on every push to `main` and updates the published files in `gh-pages`.
 
 ## Configuration
 
