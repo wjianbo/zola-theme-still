@@ -5,7 +5,7 @@ homepage = "https://github.com/wjianbo/zola-theme-still"
 # The minimum version of Zola required
 min_version = "0.22.0"
 # An optional live demo URL
-demo = ""
+demo = "https://wjianbo.github.io/zola-theme-still/"
 
 # Any variable there can be overridden in the end user `config.toml`
 # You don't need to prefix variables by the theme name but as this will
