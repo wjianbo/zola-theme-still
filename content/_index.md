@@ -20,9 +20,9 @@ This demo is intentionally small. It shows how the homepage, section listing, ar
 
 ### Read a few sample posts
 
-* [Why I removed the Home button](/posts/why-no-home/)
-* [Designing for less, not more](/posts/designing-for-less/)
-* [Notes on writing in public](/posts/writing-in-public/)
+* [Why I removed the Home button](./posts/why-no-home/)
+* [Designing for less, not more](./posts/designing-for-less/)
+* [Notes on writing in public](./posts/writing-in-public/)
 
 ---
 
