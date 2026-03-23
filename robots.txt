@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://wjianbo.github.io/zola-theme-still/sitemap.xml

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>still</title>
+    <subtitle>A minimal Zola theme focused on reading and writing.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://wjianbo.github.io/zola-theme-still/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://wjianbo.github.io/zola-theme-still"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-03-18T00:00:00+00:00</updated>
+    <id>https://wjianbo.github.io/zola-theme-still/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Why I removed the Home button</title>
+        <published>2026-03-18T00:00:00+00:00</published>
+        <updated>2026-03-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              still Demo
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://wjianbo.github.io/zola-theme-still/posts/why-no-home/"/>
+        <id>https://wjianbo.github.io/zola-theme-still/posts/why-no-home/</id>
+        
+        <content type="html" xml:base="https://wjianbo.github.io/zola-theme-still/posts/why-no-home/">&lt;p&gt;A quiet page does not need to explain itself too loudly.&lt;&#x2F;p&gt;
+&lt;p&gt;When every screen includes a large cluster of controls, the reader is reminded that the interface matters as much as the text. I wanted the opposite feeling: arrive, read, leave with as little friction as possible.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Navigation should help the reader leave the chrome behind.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;That is why this demo keeps navigation spare. Links remain available where they are useful, but they do not lead the page.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Designing for less, not more</title>
+        <published>2026-03-17T00:00:00+00:00</published>
+        <updated>2026-03-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              still Demo
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://wjianbo.github.io/zola-theme-still/posts/designing-for-less/"/>
+        <id>https://wjianbo.github.io/zola-theme-still/posts/designing-for-less/</id>
+        
+        <content type="html" xml:base="https://wjianbo.github.io/zola-theme-still/posts/designing-for-less/">&lt;p&gt;Minimal design is not the absence of decisions. It is the result of making many decisions and then refusing to display all of them at once.&lt;&#x2F;p&gt;
+&lt;p&gt;In practice, that means:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;choosing a comfortable line length&lt;&#x2F;li&gt;
+&lt;li&gt;letting whitespace do structural work&lt;&#x2F;li&gt;
+&lt;li&gt;using contrast sparingly&lt;&#x2F;li&gt;
+&lt;li&gt;resisting components that call attention to themselves&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;A theme like &lt;strong&gt;still&lt;&#x2F;strong&gt; tries to make those choices feel inevitable rather than impressive.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Notes on writing in public</title>
+        <published>2026-03-16T00:00:00+00:00</published>
+        <updated>2026-03-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              still Demo
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://wjianbo.github.io/zola-theme-still/posts/writing-in-public/"/>
+        <id>https://wjianbo.github.io/zola-theme-still/posts/writing-in-public/</id>
+        
+        <content type="html" xml:base="https://wjianbo.github.io/zola-theme-still/posts/writing-in-public/">&lt;p&gt;Publishing online often tempts us to optimize for reaction instead of reflection.&lt;&#x2F;p&gt;
+&lt;p&gt;This theme leans the other way. It favors a page that can hold a long paragraph, a small aside, or even a compact code block like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;text&quot;&gt;write clearly
+remove noise
+leave room
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The goal is not austerity for its own sake. The goal is to keep attention close to the sentence.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

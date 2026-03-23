@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://wjianbo.github.io/zola-theme-still/</loc>
+    </url>
+    <url>
+        <loc>https://wjianbo.github.io/zola-theme-still/posts/</loc>
+    </url>
+    <url>
+        <loc>https://wjianbo.github.io/zola-theme-still/posts/designing-for-less/</loc>
+        <lastmod>2026-03-17</lastmod>
+    </url>
+    <url>
+        <loc>https://wjianbo.github.io/zola-theme-still/posts/why-no-home/</loc>
+        <lastmod>2026-03-18</lastmod>
+    </url>
+    <url>
+        <loc>https://wjianbo.github.io/zola-theme-still/posts/writing-in-public/</loc>
+        <lastmod>2026-03-16</lastmod>
+    </url>
+</urlset>
