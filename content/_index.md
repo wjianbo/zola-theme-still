@@ -26,4 +26,4 @@ This demo is intentionally small. It shows how the homepage, section listing, ar
 
 ---
 
-Built with Zola. Theme: still.
+Built with [Zola](https://www.getzola.org/). Theme: [still](https://github.com/wjianbo/zola-theme-still).
